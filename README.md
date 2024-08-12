@@ -1,5 +1,6 @@
 <p align="center">
   <img src="https://cdn-icons-png.flaticon.com/512/6295/6295417.png" width="100" />
+  <p> FriendShip Zone Web App</p>
 </p>
 <hr>
 
@@ -12,11 +13,7 @@
 > - [ Getting Started](#-getting-started)
 >   - [ Installation](#-installation)
 >   - [ Running FriendShip_Zone_Web_App](#-running-FriendShip_Zone_Web_App)
->   - [ Tests](#-tests)
-> - [ Project Roadmap](#-project-roadmap)
-> - [ Contributing](#-contributing)
-> - [ License](#-license)
-> - [ Acknowledgments](#-acknowledgments)
+> - [Output](#-Output)
 
 ---
 

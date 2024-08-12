@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <script>
+        function validateForm() {
+            const name = document.forms["registrationForm"]["name"].value;
+            const email = document.forms["registrationForm"]["email"].value;
+            const age = document.forms["registrationForm"]["age"].value;
+
+            if (name.length < 3 || /\d/.test(name)) {
+                alert("Name must be at least 3 characters long and cannot contain numbers.");
+                return false;
+            }
+            if (!/^\S+@\S+\.\S+$/.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+            if (isNaN(age) || age < 18) {
+                alert("You must be at least 18 years old.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form name="registrationForm" action="/RegistrationForm.html" method="POST" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        <input type="submit" value="Register">
+        <input type="submit" name="admin" value="Register as Admin">
+    </form>
+</body>
+</html>

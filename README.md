@@ -1,6 +1,8 @@
 <p align="center">
   <img src="https://cdn-icons-png.flaticon.com/512/6295/6295417.png" width="100" />
-  <p> FriendShip Zone Web App</p>
+  <p align="center">
+    <h1 align="center">FRIENDSHIP_ZONE_WEB_APP</h1>
+</p>
 </p>
 <hr>
 
